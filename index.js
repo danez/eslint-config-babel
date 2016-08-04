@@ -33,6 +33,9 @@ module.exports = {
     "no-inner-declarations": "off",
     "no-case-declarations": "off",
     semi: ["error", "always"],
+    
+    // disallow declaration of variables that are not used in the code
+    "no-unused-vars': [2, { vars: 'local', args: 'after-used' }],
 
     // soft indent of 2 characters
     "indent": ["error", 2],
